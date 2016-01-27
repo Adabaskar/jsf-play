@@ -18,15 +18,16 @@ import de.adabaskar.play.domainfake.BusinessServiceDummy;
 @RequestScoped
 public class EntryPageViewModel {
 	
-	BusinessServiceDummy _serviceFake;
+	BusinessServiceDummy _serviceDummy;
 	
+	//prefer this kind of injection point specification because of testability
 	@Inject
-	void setBusinessServiceFake(BusinessServiceDummy fake) {
-		_serviceFake = fake;
+	public void setBusinessServiceDummy(BusinessServiceDummy fake) {
+		_serviceDummy = fake;
 	}
 	
 	public Date getRequestTime() {
-		return  _serviceFake.getServiceRequestTime();
+		return  _serviceDummy.getServiceRequestTime();
 	}
 	
 	

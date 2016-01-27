@@ -10,7 +10,7 @@ import javax.enterprise.context.RequestScoped;
  *
  */
 @RequestScoped
-public class BusinessServiceFake {
+public class BusinessServiceDummy {
 
 	public Date getServiceRequestTime() {		
 		return new Date();

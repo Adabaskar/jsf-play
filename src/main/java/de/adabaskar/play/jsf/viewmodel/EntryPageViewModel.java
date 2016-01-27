@@ -6,7 +6,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import de.adabaskar.play.domainfake.BusinessServiceFake;
+import de.adabaskar.play.domainfake.BusinessServiceDummy;
 
 /**
  * Simulates a view model, like for instance proposed by the MVVM pattern. Named annotation is required in order to be 
@@ -18,10 +18,10 @@ import de.adabaskar.play.domainfake.BusinessServiceFake;
 @RequestScoped
 public class EntryPageViewModel {
 	
-	BusinessServiceFake _serviceFake;
+	BusinessServiceDummy _serviceFake;
 	
 	@Inject
-	void setBusinessServiceFake(BusinessServiceFake fake) {
+	void setBusinessServiceFake(BusinessServiceDummy fake) {
 		_serviceFake = fake;
 	}
 	

@@ -37,7 +37,7 @@ There are currently four files one can play around with:
 * src/main/webapp/index.xhtml
 * src/main/webapp/indexPF.xhtml
 * src/main/java/de/adabaskar/play/jsf/viewmodel/EntryPageViewModel.java
-* src/main/java/de/adabaskar/play/domainfake/BusinessServiceFake.java
+* src/main/java/de/adabaskar/play/domainfake/BusinessServiceDummy.java
 
 
 

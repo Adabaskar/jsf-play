@@ -8,6 +8,12 @@ import javax.inject.Named;
 
 import de.adabaskar.play.domainfake.BusinessServiceFake;
 
+/**
+ * Simulates a view model, like for instance proposed by the MVVM pattern. Named annotation is required in order to be 
+ * accessible via expression language in a jsf view description file. 
+ * @author BARTCZBO
+ *
+ */
 @Named
 @RequestScoped
 public class EntryPageViewModel {

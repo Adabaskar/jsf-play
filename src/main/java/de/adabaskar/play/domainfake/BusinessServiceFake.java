@@ -4,6 +4,11 @@ import java.util.Date;
 
 import javax.enterprise.context.RequestScoped;
 
+/**
+ * Injected to view model. Simulates a domain layer. 
+ * @author BARTCZBO
+ *
+ */
 @RequestScoped
 public class BusinessServiceFake {
 

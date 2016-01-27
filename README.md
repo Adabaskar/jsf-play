@@ -22,6 +22,28 @@ In Eclipse open the server view through Window &gt; Servers. Right Click and sel
 
 The Servers view should now show the server, shich you should be able to start via right click > Start. Per default you should be able to reach the server via the browser using the URL http://localhost:8080. Stop the server via the handle in the Eclipse Servers view by right click > Stop.
 
+## Clone the sample project from github via Eclipse
+In Eclipse create a new Project by checking it out from git. Use File &gt; New &gt; Other ... &gt; Maven &gt; Check out Maven Projects from SCM. If no m2e connector has been installed before click on the Find moew SCM connectors in the m2e Marketplace link on the wizard's page. Select the *m2e-egit* connector plugin and install it.
+
+Select git fror the drop down selection which is part of the *SCM URL* labeled field and paste the following address https://github.com/Adabaskar/jsf-play.git into the field. Got to the next wizard page named Select Project Location and change the *Location:* away from the default workspace, this will make the management of project relevant files easier. For example use SOME_PROJECTS_FOLDER/jsfPlay/git . Checkout the project, it should be automatically be configured by the m2e plugin.
+
+## Add resources to the application server in Eclipse
+After cloning the project like described above, add the resulting war package to the previously configured server. This can be achieved via the Servers view in eclipse. Find the corresponding server handle and right click &gt; Add and Remove ... Add the the project from the *Available:* list, so that it is displayed in th *Configured:* list. Close the wizard and start the server (see above).
+
+## Check availablity and start playing
+You should be able to reach a jsf website via http://localhost:8080/jsf-play-war/index.xhtml or http://localhost:8080/jsf-play-war/indexPF.xhtml
+
+There are currently four files one can play around with:
+* src/main/webapp/index.xhtml
+* src/main/webapp/indexPF.xhtml
+* src/main/java/de/adabaskar/play/jsf/viewmodel/EntryPageViewModel.java
+* src/main/java/de/adabaskar/play/domainfake/BusinessServiceFake.java
+
+
+
+
+
+
 
 
 

@@ -5,7 +5,7 @@ a sample project to get started with jsf
 Download current Java SDK e.g. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html. In the text the corresponding install directory is referred to through JDK_INSTALL_DIR. 
 
 ## Wildfly
-Download 10.0.0.CR5 version of Wildfly from http://wildfly.org/downloads/, simply unpack the contents, the resulting top level directory is referred to through WILDFLY_DIR
+Download 10.0.0.Final version of Wildfly from http://wildfly.org/downloads/, simply unpack the contents, the resulting top level directory is referred to through WILDFLY_DIR
 
 ## Eclipse IDE
 Download Eclipse for JEE devlopers, e.g. https://eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-win32-x86_64.zip
